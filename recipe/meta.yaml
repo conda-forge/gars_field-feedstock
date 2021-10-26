@@ -1,5 +1,5 @@
 {% set name = "gars_field" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cdff4ec069f5302e07c6c019df12346cc7e92a5bfd59abf7c94f44c76631c093
+  sha256: 36d97d9d41bc040b47ff2cee5582f494220c91904b37d21fa64a33dee8de20ab
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,7 +32,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: Toolkit to generate Global Area Reference System grids. 
+  summary: Toolkit to generate Global Area Reference System grids.
   description: |
     Toolkit to generate Global Area Reference System grids. 
   doc_url: https://github.com/corteva/gars-field
