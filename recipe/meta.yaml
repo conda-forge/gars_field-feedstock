@@ -1,5 +1,5 @@
 {% set name = "gars_field" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e4c08851557bced9944231dedc4e1a1be778bb0a5b02ce3bf2296848a13e61fa
+  sha256: 2f889ab5fb12c2a8466201436d0ee9907a58e99112c2414af05b149cf1d1be2a
 
 build:
   noarch: python
