@@ -5,11 +5,11 @@ context:
   version: 0.3.4
 
 package:
-  name: gars-field
+  name: gars_field
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/g/gars-field/gars-field-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/g/gars_field/gars_field-${{ version }}.tar.gz
   sha256: 8957cd98ec9a1aa1e1f5b9397cce2979ff307c7b5bc43f005a8d6968748331a1
 
 build:
