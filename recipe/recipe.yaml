@@ -41,11 +41,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: Toolkit to generate Global Area Reference System grids. 
-  description: |
-    Toolkit to generate Global Area Reference System grids. 
-  documentation: http://github.com/vylor/gars-field
-  repository: http://github.com/vylor/gars-field
+  summary: Toolkit to generate Global Area Reference System grids.
 
 extra:
   recipe-maintainers:
