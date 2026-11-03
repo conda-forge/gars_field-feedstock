@@ -1,29 +1,29 @@
-About gars_field-feedstock
+About gars-field-feedstock
 ==========================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gars_field-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/corteva/gars-field
+Home: http://github.com/vylor/gars-field
 
 Package license: BSD-3-Clause
 
 Summary: Toolkit to generate Global Area Reference System grids.
 
-Development: https://github.com/corteva/gars-field
+Development: http://github.com/vylor/gars-field
 
-Documentation: https://github.com/corteva/gars-field
+Documentation: http://github.com/vylor/gars-field
 
 Toolkit to generate Global Area Reference System grids.
-
 
 Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14183&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gars_field-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/gars_field-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/gars_field-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -34,54 +34,99 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-gars_field-green.svg)](https://anaconda.org/conda-forge/gars_field) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gars_field.svg)](https://anaconda.org/conda-forge/gars_field) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gars_field.svg)](https://anaconda.org/conda-forge/gars_field) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gars_field.svg)](https://anaconda.org/conda-forge/gars_field) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-gars--field-green.svg)](https://anaconda.org/conda-forge/gars-field) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gars-field.svg)](https://anaconda.org/conda-forge/gars-field) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gars-field.svg)](https://anaconda.org/conda-forge/gars-field) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gars-field.svg)](https://anaconda.org/conda-forge/gars-field) |
 
-Installing gars_field
+Installing gars-field
 =====================
 
-Installing `gars_field` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `gars-field` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `gars_field` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
-conda install gars_field
+conda install gars-field
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
-mamba install gars_field
+mamba install gars-field
 ```
 
-It is possible to list all of the versions of `gars_field` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
 
 ```
-conda search gars_field --channel conda-forge
+# for adding to your local project
+pixi add gars-field
+# for installing globally
+pixi global install gars-field
 ```
 
-or with `mamba`:
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `gars-field` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
-mamba search gars_field --channel conda-forge
+conda search gars-field --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With mamba</summary>
+
+```
+mamba search gars-field --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search gars-field --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search gars_field --channel conda-forge
+mamba repoquery search gars-field --channel conda-forge
 
-# List packages depending on `gars_field`:
-mamba repoquery whoneeds gars_field --channel conda-forge
+# List packages depending on `gars-field`:
+mamba repoquery whoneeds gars-field --channel conda-forge
 
-# List dependencies of `gars_field`:
-mamba repoquery depends gars_field --channel conda-forge
+# List dependencies of `gars-field`:
+mamba repoquery depends gars-field --channel conda-forge
 ```
+
+</details>
+
 
 
 About conda-forge
@@ -98,19 +143,17 @@ for each of the installable packages. Such a repository is known as a *feedstock
 A feedstock is made up of a conda recipe (the instructions on what and how to build
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
-[Azure](https://azure.microsoft.com/en-us/services/devops/), [GitHub](https://github.com/),
-[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
-[Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
+[Azure](https://azure.microsoft.com/en-us/services/devops/) and [GitHub](https://github.com/)
 it is possible to build and upload installable packages to the
 [conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
-To manage the continuous integration and simplify feedstock maintenance
+To manage the continuous integration and simplify feedstock maintenance,
 [conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
-For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
+For more information, please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
@@ -125,19 +168,19 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating gars_field-feedstock
+Updating gars-field-feedstock
 =============================
 
-If you would like to improve the gars_field recipe or build a new
+If you would like to improve the gars-field recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/gars_field-feedstock are
+Note that all branches in the conda-forge/gars-field-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
-on branches in forks and branches in the main repository should only be used to
+on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
