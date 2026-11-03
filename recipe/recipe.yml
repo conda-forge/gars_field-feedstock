@@ -1,0 +1,52 @@
+schema_version: 1
+
+context:
+  python_min: '3.13'
+  version: 0.3.4
+
+package:
+  name: gars-field
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/g/gars-field/gars-field-${{ version }}.tar.gz
+  sha256: 8957cd98ec9a1aa1e1f5b9397cce2979ff307c7b5bc43f005a8d6968748331a1
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - shapely >=2
+    - pyproj >=3.7
+
+tests:
+  - python:
+      imports:
+        - gars_field
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - '*'
+
+about:
+  homepage: http://github.com/vylor/gars-field
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: Toolkit to generate Global Area Reference System grids. 
+  description: |
+    Toolkit to generate Global Area Reference System grids. 
+  documentation: http://github.com/vylor/gars-field
+  repository: http://github.com/vylor/gars-field
+
+extra:
+  recipe-maintainers:
+    - snowman2
