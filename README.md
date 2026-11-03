@@ -1,20 +1,19 @@
-About gars_field-feedstock
+About gars-field-feedstock
 ==========================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gars_field-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/corteva/gars-field
+Home: http://github.com/vylor/gars-field
 
 Package license: BSD-3-Clause
 
 Summary: Toolkit to generate Global Area Reference System grids.
 
-Development: https://github.com/corteva/gars-field
+Development: http://github.com/vylor/gars-field
 
-Documentation: https://github.com/corteva/gars-field
+Documentation: http://github.com/vylor/gars-field
 
 Toolkit to generate Global Area Reference System grids.
-
 
 Current build status
 ====================
@@ -35,12 +34,12 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-gars__field-green.svg)](https://anaconda.org/conda-forge/gars_field) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gars_field.svg)](https://anaconda.org/conda-forge/gars_field) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gars_field.svg)](https://anaconda.org/conda-forge/gars_field) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gars_field.svg)](https://anaconda.org/conda-forge/gars_field) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-gars--field-green.svg)](https://anaconda.org/conda-forge/gars-field) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gars-field.svg)](https://anaconda.org/conda-forge/gars-field) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gars-field.svg)](https://anaconda.org/conda-forge/gars-field) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gars-field.svg)](https://anaconda.org/conda-forge/gars-field) |
 
-Installing gars_field
+Installing gars-field
 =====================
 
-Installing `gars_field` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `gars-field` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
@@ -54,7 +53,7 @@ How to use
 <summary>With conda</summary>
 
 ```
-conda install gars_field
+conda install gars-field
 ```
 
 </details>
@@ -63,7 +62,7 @@ conda install gars_field
 <summary>With mamba</summary>
 
 ```
-mamba install gars_field
+mamba install gars-field
 ```
 
 </details>
@@ -73,9 +72,9 @@ mamba install gars_field
 
 ```
 # for adding to your local project
-pixi add gars_field
+pixi add gars-field
 # for installing globally
-pixi global install gars_field
+pixi global install gars-field
 ```
 
 </details>
@@ -83,13 +82,13 @@ pixi global install gars_field
 Search package versions
 -----------------------
 
-It is possible to list all of the versions of `gars_field` available on your platform:
+It is possible to list all of the versions of `gars-field` available on your platform:
 
 <details>
 <summary>With conda</summary>
 
 ```
-conda search gars_field --channel conda-forge
+conda search gars-field --channel conda-forge
 ```
 
 </details>
@@ -98,7 +97,7 @@ conda search gars_field --channel conda-forge
 <summary>With mamba</summary>
 
 ```
-mamba search gars_field --channel conda-forge
+mamba search gars-field --channel conda-forge
 ```
 
 </details>
@@ -107,7 +106,7 @@ mamba search gars_field --channel conda-forge
 <summary>With pixi</summary>
 
 ```
-pixi search gars_field --channel conda-forge
+pixi search gars-field --channel conda-forge
 ```
 
 </details>
@@ -117,13 +116,13 @@ pixi search gars_field --channel conda-forge
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search gars_field --channel conda-forge
+mamba repoquery search gars-field --channel conda-forge
 
-# List packages depending on `gars_field`:
-mamba repoquery whoneeds gars_field --channel conda-forge
+# List packages depending on `gars-field`:
+mamba repoquery whoneeds gars-field --channel conda-forge
 
-# List dependencies of `gars_field`:
-mamba repoquery depends gars_field --channel conda-forge
+# List dependencies of `gars-field`:
+mamba repoquery depends gars-field --channel conda-forge
 ```
 
 </details>
@@ -169,17 +168,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating gars_field-feedstock
+Updating gars-field-feedstock
 =============================
 
-If you would like to improve the gars_field recipe or build a new
+If you would like to improve the gars-field recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/gars_field-feedstock are
+Note that all branches in the conda-forge/gars-field-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
